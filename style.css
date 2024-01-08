@@ -1,0 +1,29 @@
+.container-fluid{
+    height: 9rem;
+    background-color: white;
+}
+
+.d-flex{
+    padding-left: 10rem;
+    width: 65em;
+}
+
+#navbar  {
+    background-color: #111827 !important;
+    /* color: white; */
+}
+
+.navbar-nav  a{
+    display: flex;
+    flex-direction: column;
+    
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    color: white !important;
+}
+
+
+.text-center{
+    display: flex;
+    flex: 3;
+}
