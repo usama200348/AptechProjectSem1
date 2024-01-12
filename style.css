@@ -1,19 +1,37 @@
+@font-face {
+    font-family: Usama;
+    src: url();
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .container-fluid{
     height: 9rem;
     background-color: white;
 }
 
 .d-flex{
-    padding-left: 10rem;
+    /* padding-left: 10rem; */
     width: 65em;
 }
 
 #navbar  {
     background-color: #111827 !important;
-    /* color: white; */
+    height: 12vh;
+    /* text-align: center; */
+    justify-content: center;
 }
 
-.navbar-nav  a{
+.sub-navigation{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav  {
     display: flex;
     flex-direction: column;
     
@@ -22,8 +40,106 @@
     color: white !important;
 }
 
+#sub_nav {
+    text-align: center;
+  /* Set your background color here */
+    color: #d3d3d3; /* Set your ash white color here */
+    padding: 10px 0;
+}
 
-.text-center{
+
+.nav-link{
+ 
     display: flex;
-    flex: 3;
+    align-content: center;
+        justify-content: center;
+    
+}
+
+#nav_containeer {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    display: flex;
+}
+
+.navbar-nav a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+.navbar-nav a:hover {
+    color: #fff; /* Set the color for hover state */
+}
+
+.my-slider-progress {
+    background: #ccc;
+  }
+  
+  .my-slider-progress-bar {
+    background: greenyellow;
+    height: 2px;
+    transition: width 400ms ease;
+    width: 0;
+  }
+
+  
+.cards {
+    margin-top: 5rem   ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-image {
+    position: relative;
+    margin-bottom: 20px; 
+        background-color: #f0f0f0; 
+    padding: 10px; 
+}
+
+.card-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card_img{
+    margin-bottom: 5em;   
+    width: 9rem;
+}
+
+.button:hover{
+    color: #fff;
+    background-color: rgb(169, 169, 169);
+
+}
+
+.button {
+    position: absolute;
+    bottom: 10px; /* Adjust the distance from the bottom */
+    left: 50%;
+    width: 10em;
+    transform: translateX(-50%);
+    background-color: #dc2626;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.sub-section{
+    display:grid;
+    margin-top: 6rem;
+}
+
+.heading{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
