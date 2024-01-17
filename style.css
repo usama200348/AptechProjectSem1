@@ -1,3 +1,9 @@
+:root{
+ --main:#010101;  
+ --core:#ec1c24  ;
+}
+
+
 @font-face {
     font-family: Usama;
     src: url();
@@ -7,6 +13,7 @@
 body{
     margin: 0;
     padding: 0;
+   
 }
 
 .container-fluid{
@@ -20,7 +27,7 @@ body{
 }
 
 #navbar  {
-    background-color: #111827 !important;
+  background-color: var(--main);
     height: 12vh;
     /* text-align: center; */
     justify-content: center;
@@ -108,7 +115,7 @@ body{
 
 .card_img{
     margin-bottom: 5em;   
-    width: 16rem;
+    width: 27rem;
 }
 
 .button:hover{
@@ -234,4 +241,25 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+#potting-mix{
+  margin-top: 2%;
+}
+#mulch-compost{
+  margin-top: 2%;
+}
+#mulch{
+  margin-top: 2%; 
+}
+#posts{
+  margin-top: 2%;
+  margin-left: 20%;
+}
+#hardware{
+  margin-top: 2%;
+  margin-left: 20%;
+}
+#gifts{
+  margin-top: 2%;
+  padding-left: 20%;
 }
