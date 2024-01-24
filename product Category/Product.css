@@ -1,0 +1,49 @@
+@font-face {
+    font-family: OpenSans;
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,400;1,500&display=swap');
+}
+
+body{
+    text-decoration: none           
+
+}
+#Heading-One{
+    color: #000000;
+    font-size: 4em;
+    margin: 0 0 24px 30px;
+    font-family: OpenSans;  
+}
+.plants{
+    /* border: 1px solid black; */
+    padding-left: 15em;
+    margin-left: 10rem;
+    border-bottom: 1px solid gray;
+    text-decoration: none;
+    }
+.plant-images{
+    display: flex;
+    width: 30px;
+    text-decoration: none           
+
+}
+
+#fruit-tree img{
+    width: 10rem;
+    margin: 0 0 0 20px;
+}
+
+#fruit-tree p{
+    background-color: #d72700;
+    color: beige;
+    margin: 20px;
+    font-size:  2rem;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 30px;
+    text-decoration: none           
+
+}
+
+#fruit-tree p:hover{
+    text-decoration: none           
+}

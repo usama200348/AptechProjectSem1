@@ -9,20 +9,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    
+  </style>
 </head>
 <body>
-<section id="main-nav">
+<section style="height: 8rem;" id="main-nav">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="https://gardenworld.com.au/wp-content/uploads/2023/02/GW_logo-1.svg" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div style="height: 2rem;" class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="https://gardenworld.com.au/wp-content/uploads/2023/02/GW_logo-1.svg" id="logo" alt=""></a>
+          
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               
               <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2" id="input-search" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
               </form>
               
@@ -32,55 +38,44 @@
         </div>
       </nav>
     </section>
-
-    <section id="sub_nav">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div id="navbar" class="container-fluid">
-              <div class="collapse navbar-collapse text-center sub-navigation" id="navbarNavAltMarkup">
-                  <div class="navbar-nav">
-                      <div class="containeer" id="nav_containeer">
-                          <a id="text" class="nav-link " aria-current="page" href="#">Plant</a>
-                          <a class="nav-link" href="#" id="potting-mix">Potting Mix</a>
-                          <a class="nav-link" href="#" id="mulch-compost">Mulch & Compost</a>
-                          <a class="nav-link" href="#" id="mulch">Mulch & Fertiliser</a>
-                          <a class="nav-link" href="#" id="posts">Pots</a>
-                          <a class="nav-link" href="#" id="hardware">Hardware</a>
-                          <a class="nav-link" href="#" id="water">Water Gardens</a>
-                          <a class="nav-link" href="#" id="furnitu">Furniture</a>
-                          <a class="nav-link" href="#" id="gifts">Gifts</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </nav>
-
-
-  
-</section>
-
-<section>
+<header>
+  <nav>
+     
+      <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+      <ul class="nav-menu">
+          <li><a  href="./product Category/product.html">Plant <i class="bi bi-house-door-fill"></i></a></li>
+          <li><a href="#">Potting Mix <i class="bi bi-ticket-detailed-fill"></i></a></li>
+          <li><a href="#">Books <i class="bi bi-image-fill"></i></a></li>
+          <li><a href="#">Pots <i class="bi bi-info-circle-fill"></i></a></li>
+          <li><a href="#">Hardware <i class="bi bi-chat-left-text-fill"></i></a></li>
+          <li><a href="#">Water Garderns <i class="bi bi-chat-left-text-fill"></i></a></li>
+          <li><a href="#">Furniture <i class="bi bi-chat-left-text-fill"></i></a></li>
+          <li><a href="#">Gifts <i class="bi bi-chat-left-text-fill"></i></a></li>
+      </ul>
+  </nav>
+</header>
+<section class="slider-section">
+  <div class="slider-containeer">
   <div class="container">
-    <h2>Carousel Example</h2>  
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
+<br>    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+     
   
       <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="assets/img/QA.jpg" alt="Los Angeles" style="width:100%;">
+      <div style="width: 40rem;" class="carousel-inner">
+        <div  class="item active">
+          <img style="width:39rem" src="assets/img/slider-picture1.png" alt="Los Angeles" style="width:100%;">
         </div>
   
         <div class="item">
-          <img src="./assets/img/QA.jpg" alt="Chicago" style="width:100%;">
+          <img style="width:39rem" src="assets/img/slider-picture2.png" alt="Chicago" style="width:100%;">
         </div>
       
         <div class="item">
-          <img src="./assets/img/QA.jpg" alt="New york" style="width:100%;">
+          <img style="width:39rem" src="assets/img/slider-picture3.png" alt="New york" style="width:100%;">
         </div>
       </div>
   
@@ -95,12 +90,13 @@
       </a>
     </div>
   </div>
+</div>
 </section>
 <section id="cards">
   <div class="cards">
       <div class="card-image">
-          <a href="#"><img class="card_img" src="./assets/img/card1.png" alt="" srcset=""></a>
-          <button class="button">Plant</button>
+          <a href="./product Category/product.html"><img class="card_img" src="./assets/img/card1.png" alt="" srcset=""></a>
+         <a href="./product Category/product.html"> <button class="button">Plant</button></a>
       </div>
 
       <div class="card-image">
@@ -144,33 +140,77 @@
 </section>
 
 <section class="sub-section">
-  <div class="heading"><h4>FEATURED PRODUCTS</h4></div>
-  <div  class="sub-splide">
-    <div class="splide">
-      <div class="splide__track">
-          <ul class="splide__list">
-              <li class="splide__slide">
-                  <div class="card">
-                      <img src="image1.jpg" alt="Card 1">
-                      <h3>Card Title 1</h3>
-                      <p>Card Description 1</p>
-                  </div>
-              </li>
-              <li class="splide__slide">
-                  <div class="card">
-                      <img src="image2.jpg" alt="Card 2">
-                      <h3>Card Title 2</h3>
-                      <p>Card Description 2</p>
-                  </div>
-              </li>
-              <!-- Add more slides as needed -->
-          </ul>
-      </div>
+  <div class="heading"><h4>--------&nbsp;&nbsp;&nbsp;FEATURED PRODUCTS &nbsp;&nbsp;&nbsp;-------- </h4></div>
+  <div class="slider">
+    <div class="slides">
+      <div class="slide"><img style="width: 20rem;"  src="./assets/img/card3.jpg" alt="Slide 1"></div>
+      <div class="slide"><img style="width: 20rem;" src="./assets/img/card2.png" alt="Slide 2"></div>
+      <!-- Add more slides as needed -->
+    </div>
+  
+    <!-- Optional navigation buttons -->
+    <div class="prev">&#10094;</div>
+    <div class="next">&#10095;</div>
   </div>
-  </div>
+  
+</div>
 </section>
 
 
+<section>
+
+  <footer>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4 id="home">Information</h4>
+                    <ul>
+                        <li><a href="#main">Blog</a></li>
+                        <li><a href="#slider">About</a></li>
+                        <li><a href="#gallery">Delivery </a></li>
+                        <li><a href="#info">Contact Us</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#geographical">My Account</a></li>
+                        <li><a href="#event">Term & Conditions</a></li>
+                        <li><a href="#about">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 id="home">Categories</h4>
+                    <ul>
+                        <li><a  href="#">Gift Voucher</a></li>
+                        <li><a href="#">Australian Native</a></li>
+                        <li><a href="#">Fruit Tree</a></li>
+                        <li><a href="#">Climbers</a></li>
+                        <li><a href="#">Espaliser & Standards</a></li>
+                        <li><a href="#">Ferns</a></li>
+                        <li><a href="#">Indoor Plants</a></li>
+                        <li><a href="#">Potting Mix</a></li>
+                        <li><a href="#">Seedlings</a></li>
+                        <li><a href="#">Shrubs</a></li>
+                        <li><a href="#">Trees</a></li>
+                    </ul>      
+                </div>
+                <div class="footer-col">
+                    <h4 id="home">Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Booking Status</a></li>
+                        <li><a href="#">Payment Option</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="contact-container">
+            <a href="mailto:moosamasohail18@gmail.com?subject-New E-mail"><i class="bi bi-envelope-at-fill"></i>
+              info@gardenworldnursery.com.au</a>
+            <p><i class="bi bi-whatsapp"></i> +1 206 5678980</p>
+            <p><i class="bi bi-geo-alt-fill"></i> 810 Springvale Rd, Braeside 3195, Australia</p> 
+        </div>
+    </div>
+</footer>
 
 <script src="../assets/js/bootstrap.bundle.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
