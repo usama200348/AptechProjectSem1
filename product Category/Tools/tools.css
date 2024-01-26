@@ -1,0 +1,41 @@
+:root {
+    --main: #010101;
+    --core: #ec1c24;
+  }
+  
+
+.card_img{
+    width: 25px;
+}
+
+
+
+.Tools{
+    background-color:var(--core) ;
+}
+
+
+.detail-pic{
+    border: 2px solid var(--main);
+    width: 550px;
+    height:550px;
+    margin-left: 3%;
+}
+.text{
+    width: 350px;
+}
+.detail-imgs{
+    align-items: center;
+    justify-content:space-evenly;
+    display: flex;
+    height: 750px;
+    
+}
+
+.breadcrumb-item{
+    background: none;
+}
+
+.bread-crumbs{
+    /* margin-top: ; */
+}

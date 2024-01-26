@@ -1,0 +1,67 @@
+@font-face {
+    font-family: d;
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,400;1,500&display=swap');
+  }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+} 
+
+#mainNav{
+    background-color: #111827 !important;
+    color: white !important;
+}
+
+#navbarmain{
+    padding: 30px;
+}
+
+#navbarNav ul li{
+    padding:5px;
+}
+#navbarNav ul li a{
+    font-size: 24px;
+    color: white;
+}
+#navbarNav ul li a:hover{
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+}
+.btn-custom{
+    background-color: red!important;
+    color:white !important;
+    
+}
+
+.dropdown-menu{
+    background-color: #111827!important;
+    color: black;
+}
+
+.footer  {
+    background-color: #111827;
+    color: white;
+}
+
+
+.footer  a{
+    color: white!important;
+}
+
+
+#BreadCrumbs{
+display: flex;
+justify-content: flex-end;
+margin-top: 2em;
+}
+
+    /* .card{
+        width: 15em!important;
+        height: 15em!important;    
+    } */
+   
+.lead{
+    margin-left: 3rem;
+}
