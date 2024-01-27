@@ -44,11 +44,22 @@
             <li><a class="dropdown-item" href="#">Seeds det ails</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./product Category/Tools/tools.html">Tools</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Accessories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Miniature garden toys</a></li>
+            <li><a class="dropdown-item" href="#">Gardening accessories</a></li>
+            <!-- <li><hr class="dropdown-divider"></li> -->
+            <li><a class="dropdown-item" href="#">	Decorative pebbles</a></li>
+          </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pots</a>
+          <a class="nav-link" href="./../Tools/tools.html" style="background-color: red;">Tools</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Pots/pots.html">Pots</a>
         </li>   
         <li class="nav-item">
           <a class="nav-link" href="#">Books</a>
@@ -73,17 +84,20 @@
     </h5>
     <br>  
     <p>Code:9319841500060</p>
+    <div class="quantity-box w-75">
+      <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+      <div class="quantity-indicator" id="quantity">1</div>
+      <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+    </div>
+    <button class="btn btn-danger mt-3 w-50 ml-9"  type="submit">Add To Cart</button>
   </nav>
 </section>
 <section id="Cards" class="mb-3 w-100 p-3 p-3 mh-75 " >
   <div class="row mt-5 w-100 p-3">
     <div class="col-lg-3 col-md-3 col-sm-12 mt-2">
-      <div class="card ">
-        <img src="../../assets/img/tool-img1.webp" class="card-img-top w-100 p-3" id='img' alt="...">
-        <div class="card-body text-center">
-           
-        </div>
-        
+      <div class="card " id="detail-card">
+        <img src="../../assets/img/tool-img1.webp" class="card-img-top w-100 p-3 " id='img' alt="...">
+               
       </div>
       
     </div>
@@ -99,9 +113,13 @@
   <li>Universal Fit to any gardern Tap</li>
   <li>No more Leak</li>
 </ul>
-
   </p>
 </section>
+<section class="video">
+  <h6>Sample Video</h6>
+  <iframe  src="https://www.youtube.com/embed/-Fc31s_Ez50?si=o9J6R_Dlrton2_mu" class="object-fit-xxl-contain border rounded w-75 h-100 d-inline-block mb-3"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
+</section>
+<br>
 <!-- footer Start -->
 <section class="footer">
 <div class="container-fluid">

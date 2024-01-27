@@ -6,6 +6,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 } 
 
 #mainNav{
@@ -57,11 +58,68 @@ justify-content: flex-end;
 margin-top: 2em;
 }
 
-    /* .card{
-        width: 15em!important;
-        height: 15em!important;    
-    } */
+    #detail-card{
+        margin-top: -18rem;
+    }
    
 .lead{
     margin-left: 3rem;
+}
+
+.description{
+    background-color: #f2f2f2;
+}
+
+.description > h6 , .video h6 {
+    font-weight: bolder;
+}
+.video {
+ background-color:#f2f2f2;   
+}
+.description > h6:hover{
+    text-decoration: underline;
+}
+
+.quantity-box {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.quantity-btn {
+    cursor: pointer;
+    background-color:red;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1rem;
+}
+
+.quantity-indicator {
+    flex: 1;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+@media (min-width: 768px) {
+    .quantity-btn {
+        padding: 10px 16px;
+        font-size: 1.2rem;
+    }
+
+    .quantity-indicator {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    #detail-card{
+        margin-top: 0; 
+    }
 }

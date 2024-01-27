@@ -6312,3 +6312,16 @@
 
 }));
 //# sourceMappingURL=bootstrap.bundle.js.map
+function increaseQuantity() {
+  var quantityElement = document.getElementById('quantity');
+  var currentQuantity = parseInt(quantityElement.innerText);
+  quantityElement.innerText = currentQuantity + 1;
+}
+
+function decreaseQuantity() {
+  var quantityElement = document.getElementById('quantity');
+  var currentQuantity = parseInt(quantityElement.innerText);
+  if (currentQuantity > 1) {
+      quantityElement.innerText = currentQuantity - 1;
+  }
+}
