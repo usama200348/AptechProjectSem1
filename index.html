@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gardern World</title>
     <link rel="stylesheet" href="assets/css/mystyle.css">
-    <link rel="stylesheet" href="url-to-cdn/splide.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/">
+    <link rel="stylesheet" href="assets/lib/splide/css/splide.min.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbarmain">
@@ -61,6 +62,9 @@
         <li class="nav-item">
           <a class="nav-link" href="./product Category/Books/index.html">Books</a>
         </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="./product Category/Tools/tools.html">Techniques/Tips </a>
+        </li>
       </ul>
     </div>
   </div>
@@ -93,7 +97,7 @@
     </div>
   </div>
   <section class="videro">
-    <video src="" class="object-fit-contain" autoplay></video>
+    
   </section>
   <div class="row mt-5">
     <div class="col-lg-3 col-md-3 col-sm-12 mt-2">
@@ -165,17 +169,18 @@
   </div>
 </div>
 </section>
-<section class="RelatedProducts">
+
+
+<section class="RelatedProducts splide" aria-label="Splide Basic HTML Example">
   <h5>------Related Products------</h5>
-  <section class="splide" aria-label="Splide Basic HTML Example">
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide">Slide 01</li>
-        <li class="splide__slide">Slide 02</li>
-        <li class="splide__slide">Slide 03</li>
-      </ul>
-    </div>
-  </section>
+  <div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide"><img src="assets/img/plant1.webp" alt=""></li>
+			<li class="splide__slide"><img src="assets/img/plant2.jpg" alt=""></li>
+			<li class="splide__slide"><img src="assets/img/plant6.webp" alt=""></li>
+			<li class="splide__slide"><img src="assets/img/plant7 .webp" alt=""></li>
+		</ul>
+  </div>
 </section>
 <!-- footer Start -->
 <section class="footer">
@@ -219,8 +224,16 @@
   </footer>
 </section>
 </div>
-<script src="path-to-the-file/splide.min.js"></script>
 <script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/lib/splide/js/splide.js"></script>
+<script>
+var splide = new Splide( '.splide', {
+  type    : 'loop',
+  perPage : 3,
+  autoplay: true,
+} );
+splide.mount();
 
+</script>
 </body>
 </html>
