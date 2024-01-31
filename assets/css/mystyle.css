@@ -33,8 +33,11 @@ body {
 .btn-custom{
     background-color: red!important;
     color:white !important;
+    transform: 0.s;
     
 }
+
+
 
 .dropdown-menu{
     background-color: #111827!important;
@@ -44,6 +47,7 @@ body {
 .footer  {
     background-color: #111827;
     color: white;
+    margin-top: 4%;
 }
 
 
@@ -61,20 +65,26 @@ margin-top: 2em;
     #detail-card{
         margin-top: -18rem;
     }
+
    
 .lead{
     margin-left: 3rem;
 }
 
-.description{
-    background-color: #f2f2f2;
+.description-1{
+    width: 50%;
+    margin-left: 50%;
+    margin-top: -20%;
 }
 
 .description > h6 , .video h6 {
     font-weight: bolder;
 }
 .video {
- background-color:#f2f2f2;   
+
+    width: 60%;
+    margin-left: 50%;
+    height: 20em;
 }
 .description > h6:hover{
     text-decoration: underline;
@@ -122,4 +132,26 @@ margin-top: 2em;
     #detail-card{
         margin-top: 0; 
     }
+}
+
+
+
+#bol{
+    width: 85%;
+}
+
+.card-1{
+    margin-top: -170%;
+    width: 170%;
+}
+
+.description-2 h6{
+    margin-left: 40%;
+    
+}
+
+
+.RelatedProducts h5{
+    text-align: center;
+    margin-top: 5em;
 }

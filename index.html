@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gardern World</title>
     <link rel="stylesheet" href="assets/css/mystyle.css">
-    
+    <link rel="stylesheet" href="url-to-cdn/splide.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbarmain">
@@ -67,7 +65,8 @@
     </div>
   </div>
 </nav>
-<div class="container">
+<section  data-aos="fade-up">
+<div class="container" >
   <div class="row">
     <div class="col-lg-12 col-md-12 col-sm-12">
       <div id="carouselExample" class="carousel slide">
@@ -93,6 +92,9 @@
       </div>
     </div>
   </div>
+  <section class="videro">
+    <video src="" class="object-fit-contain" autoplay></video>
+  </section>
   <div class="row mt-5">
     <div class="col-lg-3 col-md-3 col-sm-12 mt-2">
       <div class="card">
@@ -136,6 +138,7 @@
       </div>
     </div>
   </div>
+
   <!-- rOW 2' -->
   <div class="row mt-5">
     <div class="col-lg-3 col-md-3 col-sm-12 mt-2">
@@ -161,6 +164,19 @@
     </div>
   </div>
 </div>
+</section>
+<section class="RelatedProducts">
+  <h5>------Related Products------</h5>
+  <section class="splide" aria-label="Splide Basic HTML Example">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">Slide 01</li>
+        <li class="splide__slide">Slide 02</li>
+        <li class="splide__slide">Slide 03</li>
+      </ul>
+    </div>
+  </section>
+</section>
 <!-- footer Start -->
 <section class="footer">
 <div class="container-fluid">
@@ -179,14 +195,14 @@
 
  
  
-      <div class="col-md-5 offset-md-1 mb-3">
+      <div  class="col-md-5 offset-md-1 mb-3 " id="subscribe">
         <form>
           <h5>Subscribe to our newsletter</h5>
           <p>Monthly digest of what's new and exciting from us.</p>
           <div class="d-flex flex-column flex-sm-row w-100 gap-2">
             <label for="newsletter1"  class="visually-hidden">Email address</label>
             <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-            <button class="btn btn-primary" type="button"><a href="mailto:moosamaosohail18@gmail.com" style="text-decoration: none;">Subscribe</a></button>
+            <button class="btn btn-primary"  type="button"><a href="mailto:moosamaosohail18@gmail.com" style="text-decoration: none;">Subscribe</a></button>
           </div>
         </form>
       </div>
@@ -203,7 +219,7 @@
   </footer>
 </section>
 </div>
-  
+<script src="path-to-the-file/splide.min.js"></script>
 <script src="assets/js/bootstrap.bundle.js"></script>
 
 </body>
